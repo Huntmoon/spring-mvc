@@ -15,7 +15,6 @@ buildscript {
 }
 
 
-
 allprojects {
     group 'com.huntmoon'
     version '1.0-SNAPSHOT'
