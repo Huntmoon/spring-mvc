@@ -13,6 +13,6 @@ import java.lang.annotation.Target;
 @Documented
 @Target({ElementType.FIELD})
 @Retention(RetentionPolicy.RUNTIME)
-public @interface DictFormat {
+public @interface Dict {
     public String dict() default "";
 }

@@ -28,7 +28,7 @@ public class DictSerializer<Object> extends StdScalarSerializer<Object> implemen
 
     @Override
     public JsonSerializer<?> createContextual(SerializerProvider prov, BeanProperty property) throws JsonMappingException {
-        DictFormat annotation = property.getAnnotation(DictFormat.class);
+        Dict annotation = property.getAnnotation(Dict.class);
         dict = annotation.dict();
         propertyName = property.getName();
         return this;
